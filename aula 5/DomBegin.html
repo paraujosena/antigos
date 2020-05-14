@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
     <style>
         body{
@@ -13,27 +12,26 @@
     </style>
 </head>
 <body>
+
     <h1> Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
     <div class = 'msg'> clique em mim</div>
-<script>
 
-    var p1 = window.document.getElementsByTagName('p')[1]
-    var p2 = window.document.getElementsByName('msg')[0]
-    
-    //var p3 = window.document.getElementsByName(); Id, Name, Class...
-    //para o querySelector : ID usa HASHTAG(#), Class usa PONTO(.)
+    <script>
 
-    //p1.style.color = 'blue'
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var p2 = window.document.getElementsByName('msg')[0]
+        
+        //var p3 = window.document.getElementsByName(); Id, Name, Class...
+        //para o querySelector : ID usa HASHTAG(#), Class usa PONTO(.)
+        //p1.style.color = 'blue'
+        //window.document.write(p2.innerText)
 
-    //window.document.write(p2.innerText)
-
-    var d = window.document.querySelector('div.msg')
-    
-    d.style.background = 'blue'
-
-</script>
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'blue'
+        
+    </script>
 
 </body>
 </html>
