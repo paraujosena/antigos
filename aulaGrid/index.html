@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Grids Cols</title>
+    <script src="jquery-min.js"></script>
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        
+        div.bg{
+            background-color:brown;
+            height: 50px;
+            border: 2px solid green;
+        }
+        div.bgy{
+            background-color: yellow;
+            height: 50px;
+            border: 5px solid black;
+            margin: 1px /*as margens externas*/
+        }
+        div.bgb{
+            background-color: black;
+            height: 50px;
+            border: 5px solid yellow;
+            margin: 1px; /* aqui são as margens externas*/
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col bgy"></div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col bgy"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col bgy"></div>
+            <div class="col-2 bgb   "></div>
+            <div class="col bgy"></div>
+            <div class="col-2 bgb   "></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-1 bgy"></div>
+            <div class="col-2 bgb   "></div>
+            <div class="col-3 bgy"></div>
+            <div class="col-2 bgb   "></div>
+            <div class="col-1 bgb   "></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row "">
+            <div class="col-1 bgy"></div>
+            <div class="col-2 bgb   "></div>
+            <div class="col-3 bgy"></div>
+            <div class="col-2 bgb   "></div>
+            <div class="col-1 bgb   "></div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-12 bgy"></div>
+            <div class="col-lg-5 col-sm-12 bgb   "></div>
+            <div class="col-lg-3 col-sm-12 bgb   "></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-12 bg"></div>
+            <div class="col-lg-4 col-sm-12 bg"></div>
+            <div class="col-lg-4 col-sm-12 bg"></div>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-12 bgy order-10"> ordem 10</div>
+            <div class="col-lg-5 col-sm-12 bgy  order-1 ">ordem 1</div>
+            <div class="col-lg-3 col-sm-12 bgy  order-5 ">ordem 5</div>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
