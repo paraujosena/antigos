@@ -8,6 +8,12 @@
     <p>This example demonstrates the <b>getElementsById</b> method.</p>
     
     <p id="demo"></p>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+      </div>
+      
     
     <script>
     var myElement = document.getElementById("intro");
@@ -23,6 +29,16 @@
         heading.appendChild(heading_text);
         document.body.appendChild(heading);
         }
+        
+      var para = document.createElement("p");
+      var node = document.createTextNode("This is new.");
+      para.appendChild(node);
+      
+      var element = document.getElementById("div1");
+      element.appendChild(para);
+
+      var elmnt = document.getElementById("p1");
+        elmnt.remove();
     </script>
   </body>
 </html>
