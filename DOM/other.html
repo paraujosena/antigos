@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Id</h2>
+
+<p id="intro">Hello World!</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+<p id="demo"></p>
+<div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+  </div>
+  
+<script>
+  var para = document.createElement("p");
+  var node = document.createTextNode("This is new.");
+  para.appendChild(node);
+  
+  var parent = document.getElementById("div1");
+  var child = document.getElementById("p1");
+  parent.replaceChild(para, child);
+    var myElement = document.getElementById("intro");
+    document.getElementById("demo").innerHTML = 
+    "The text from the intro paragraph is " + myElement.innerHTML;
+</script>
+
+</body>
+</html>
