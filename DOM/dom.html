@@ -1,0 +1,28 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h2>Finding HTML Elements by Id</h2>
+
+    <p id="intro">Hello World!</p>
+    <p>This example demonstrates the <b>getElementsById</b> method.</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var myElement = document.getElementById("intro");
+    document.getElementById("demo").innerHTML = 
+    "The text from the intro paragraph is " + myElement.innerHTML;
+
+       // run this function when the document is loaded
+       window.onload = function() {
+
+        // create a couple of elements in an otherwise empty HTML page
+        var heading = document.createElement("h1");
+        var heading_text = document.createTextNode("Big Head!");
+        heading.appendChild(heading_text);
+        document.body.appendChild(heading);
+        }
+    </script>
+  </body>
+</html>
