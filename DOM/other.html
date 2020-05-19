@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1> PRINCIPAL </h1>
-<h2>Finding HTML Elements by Id</h2>
+  <h1> Hellor World </h1>
+  <h2>Encontrando elementos por TagName,Id,Class,Nome e Selector</h2>
 
-<p id="intro">Hello World!</p>
-<p>This example demonstrates the <b>getElementsById</b> method.</p>
+  <p id="intro">Texto introdutório!</p>
+  <p>Vamos ver como funciona o método <b>getElementsById</b>.</p>
 
-<p id="demo"></p>
-<div id="div1">
-    <p id="p1">This is a paragraph.</p>
-    <p id="p2">This is another paragraph.</p>
+  <p id="demo"></p>
+  <div id="div1">
+    <p id="p1">Isso é um parágrafo.</p>
+    <p id="p2">Esse é outro parágrafo.</p>
   </div>
-  
-<script>
-  var para = document.createElement("p");
-  var node = document.createTextNode("This is new.");
-  para.appendChild(node);
-  
-  var parent = document.getElementById("div1");
-  var child = document.getElementById("p1");
-  parent.replaceChild(para, child);
-    var myElement = document.getElementById("intro");
-    document.getElementById("demo").innerHTML = 
-    "The text from the intro paragraph is " + myElement.innerHTML;
-</script>
+    
+  <script>
+    var para = document
+      .createElement("p");
+    var node = document
+      .createTextNode("Este é um novo parágrafo.");
+    para.appendChild(node);
+    
+    var parent = document
+      .getElementById("div1");
+    var child = document
+      .getElementById("p1");  
+    parent
+      .replaceChild(para, child);
+      var myElement = document
+      .getElementById("intro");
+      document
+      .getElementById("demo").innerHTML = 
+      "O texto inicial é: " 
+      + myElement.innerHTML;
+
+      var tagName = window.document.getElementsByTagName('p')[0]; //são enumerados pela ordem, com "0" pegamos o primeiro.
+      
+      window.document.write('Está escrito assim:' + tagName.innerText);
+      //operadores aritmeticos, logicos e relacionais. [(),**,/,>,<,>=,!,&&,||] na ordem. % resto
+      //operador ternário -> (condição)?(true):(false)
+      //5=="5",'5' não testa o tipo
+      //5===5, aqui testa se são identicos, valor e tipo
+       //! = negação, && = conjunção, || = disjunção
+
+       /*
+       DOM - DOCUMENT OBJECT MODEL -> window.
+      (
+        location()
+        ,document(html(head(meta(), link(), title()),bod(h1(), p(strong()))))
+        ,history()
+      )
+       parent:pai mãe-> acima
+       child: filho-> abaixo
+
+       vamos acessar por: marca/tag, id, class, nome, selector(mais recente).
+       
+       */
+  </script>
 
 </body>
 </html>
