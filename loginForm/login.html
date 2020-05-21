@@ -1,36 +1,45 @@
 <html>
     <head>
         <title>Ancapage</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container" name="content">
             <div class="content first-content">
                 <div class="first-column">
-                    <h2 class="title"> Welcome back! </h2>
+                    <h2 class="title welcome"> Welcome back! </h2>
                     <p class="description"> To keep connected with us</p>
                     <p class="description">Please login with your personal info</p>
-                    <button class="btn"> SIGN IN</button>
+                    <button class="btn btn-primary"> SIGN IN</button>
                 </div>
                 <div class="second-column">
                     <h2 class="title">Create account</h2>
                     <div class="social-media">
-                        <ul>
-                            <li><a href="http://">facebook</a></li>
-                            <li><a href="http://">google</a></li>
-                            <li><a href="http://">linkedin</a></li>
+                        <ul class="list-social-media">
+                            <li class="item-social-media"><a  href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a></li>
+                            <li class="item-social-media"><a href="http://">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a></li>
+                            <li class="item-social-media"><a href="http://">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
                         </ul>
                     </div>
                     <p class="description"> Or use your email for registration</p>
-                    <input type="name" placeholder="Name">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Password">
-                    <button class="btn">Sign up</button>
-                
+                    <form class="form">
+                        <input type="name" placeholder="Name">
+                        <input type="email" placeholder="E-mail">
+                        <input type="password" placeholder="Password">
+                        <button class="btn">Sign up</button>
+                    </form>
                 </div>
             </div>
             <div class="content second-content">
                 <div class="first-column">
-                    <h2 class="title"> Hello friend! </h2>
+                    <h2 class="title"> Hello, friend! </h2>
                     <p class="description"> Enter yout personal details</p>
                     <p class="description">And start journey with us!</p>
                     <button class="btn"> SIGN UP</button>
@@ -45,11 +54,13 @@
                         </ul>
                     </div>
                     <p class="description"> Or use your email account</p>
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Password">
-                    <a href="#">Forgot your password?</a>
-                    <button class="btn">Sign in</button>
-                
+                    <form  class="form">
+                        <input type="email" placeholder="E-mail">
+                        <input type="password" placeholder="Password">
+                        <a href="#">Forgot your password?</a>
+                        <button class="btn">Sign in</button>
+                    </form>
+                        
                 </div>
 
             </div>

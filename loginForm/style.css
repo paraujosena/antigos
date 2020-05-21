@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.welcome{
+    color: #fff;
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 20px;
+}
+.container{
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color:#fff;
+    padding: 10px 30px;
+    font-size: 10px;
+}
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #58af9b;
+}
+
+.content{
+    border-radius: 15px;
+    background-color: #fff;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+}
+
+.first-content{
+    display: flex;
+}
+.second-content{
+    display: none;
+}
+
+.first-column{
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 10;
+}
+.second-column{
+    flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media {
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    
+}
+.item-social-media a{
+    color: #95a5a6;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.content {
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.content::before{
+    content:"";
+    position: absolute;
+    background-color: #58af95;
+    width: 40%;
+    height: 100%;
+}
+.title{
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.title-primary{
+    color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
+.first-column{
+    text-align: center;
+    flex: 1 0 auto;
+}
+.second-column{
+    text-align: center;
+    flex: 2 0 auto;
+}
+.second-content{
+    display: none;
+}
+
+*/
