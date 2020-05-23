@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.26/css/bulma.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="columns">
+        <div class="column">
+          <p class="notification is-info">.column</p>
+        </div>
+        <div class="column">
+          <p class="notification is-info">.column</p>
+        </div>
+        <div class="column">
+          <p class="notification is-info">.column</p>
+        </div>
+        <div class="column">
+          <p class="notification is-info">.column</p>
+        </div>
+      </div>
+      
+      <div>
+        <button class="add button is-success">
+          Add column
+        </button>
+        <button class="remove button is-danger">
+          Remove column
+        </button>
+      </div>
+
+      <script>
+        var columns = $(".columns");
+        var column = "<div class='column'>"
+        .concat("<p class='notification is-info'>")
+        .concat(".column")
+        .concat("</p>")
+        .concat("</column>");
+
+        // add columns
+        $(".add").on("click", function(){
+        var limit = columns
+            .children(".column")
+            .length;
+
+        if (limit < 12) {
+            columns
+            .append(column);
+        }
+        });
+
+        // remove columns
+        $(".remove").on("click", function(){
+        columns
+            .children(".column")
+            .last()
+            .remove();
+        });
+      </script>
+</body>
+</html>
